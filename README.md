@@ -1,7 +1,33 @@
 ## About Autoit-Serialize-JS
-Javascript counterpart for [Autoit-Serialize](https://github.com/tarreislam/Autoit-Serialize). THIS IS NOT A REPLACEMENT for JSON. Use this exclusively for Autoit2Javascript communication
+JavaScript counterpart for [Autoit-Serialize](https://github.com/tarreislam/Autoit-Serialize). THIS IS NOT A REPLACEMENT for JSON. Use this exclusively for Autoit2Javascript communication
 
-### How slow is it?
+## How to install
+
+`npm install -s autoit-serialize-js`
+
+## How to use
+
+#### With import
+
+```typescript
+import Serializer from 'autoit-serialize-js'
+
+// Serialize data
+Serializer.serialize([1,2,3])
+
+// Unserialize data
+Serializer.unSerialize('a|0x496E7433327C3124496E7433327C3224496E7433327C33')
+```
+
+### Require
+
+```javascript
+// cba, check dist folder i made the package build there
+```
+
+## FAQ
+
+### How bad is it?
 
 Look at this graph
 ```
@@ -16,11 +42,11 @@ JSON: UnSerialize. IPS: 246133 @ 30 seconds
 JSON: Serialize+UnSerialize. IPS: 119166 @ 30 seconds
 ```
 
-The data is **5 times bigger**, and the parsing is **41 times slower.**
+The data is **5 times bigger**, and the parsing is **41 times slower**, and its not human readable.
 
 ### Then, why don't you port JSON to AutoIt instead?
 
-Because the Javascript engine is much faster than Autoit interpreter. With that said, javascript can take the performance hit and still outperform the AutoIt counterpart with **31 times the speed**.
+Because the JavaScript engine is much faster than Autoit interpreter. With that said, JavaScript can take the performance hit and still outperform the AutoIt counterpart with **31 times the speed**.
 
 ### Then, why don't you stop using AutoIt
 
