@@ -1,6 +1,6 @@
 {
   "name": "autoit-serialize-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Serialize and UnSerialize data between autoit and Javascript",
   "main": "dist/index.js",
   "scripts": {
