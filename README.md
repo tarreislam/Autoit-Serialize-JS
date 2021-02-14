@@ -13,10 +13,10 @@ JavaScript counterpart for [Autoit-Serialize](https://github.com/tarreislam/Auto
 import { Serializer } from 'autoit-serialize-js'
 
 // Serialize data
-Serializer.serialize([1,2,3])
+console.log(Serializer.serialize([1,2,3]))
 
-// Unserialize data
-Serializer.unSerialize('a|0x496E7433327C3124496E7433327C3224496E7433327C33')
+// UnSerialize data
+console.log(Serializer.unSerialize('a|0x496E7433327C3124496E7433327C3224496E7433327C33'))
 ```
 
 ### Require
@@ -25,10 +25,10 @@ Serializer.unSerialize('a|0x496E7433327C3124496E7433327C3224496E7433327C33')
 const Serializer = require('autoit-serialize-js').Serializer
 
 // Serialize data
-Serializer.serialize([1,2,3])
+console.log(Serializer.serialize([1,2,3]))
 
-// Unserialize data
-Serializer.unSerialize('a|0x496E7433327C3124496E7433327C3224496E7433327C33')
+// UnSerialize data
+console.log(Serializer.unSerialize('a|0x496E7433327C3124496E7433327C3224496E7433327C33'))
 ```
 
 ## FAQ
