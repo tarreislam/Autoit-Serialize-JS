@@ -1,8 +1,8 @@
 {
   "name": "autoit-serialize-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Serialize and UnSerialize data between autoit and Javascript",
-  "main": "index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha -r ts-node/register __tests__/**/*.spec.ts",
     "test:speed": "ts-node speed-test.ts",

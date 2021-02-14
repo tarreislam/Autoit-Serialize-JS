@@ -24,15 +24,15 @@ class Serialize {
             switch (type) {
                 case "object":
                     return AsTf.make(AutoItTypes_1.AutoItTypes.Object, this.serializeScriptingDictionary(source));
-                case "string":
-                    return AsTf.make(AutoItTypes_1.AutoItTypes.String, this.serializeString(source));
                 case 'boolean':
                     return AsTf.make(AutoItTypes_1.AutoItTypes.Boolean, this.serializeBoolean(source));
                 case 'number':
                     return AsTf.make(AutoItTypes_1.AutoItTypes.Int32, source);
+                case "string":
+                default:
+                    return AsTf.make(AutoItTypes_1.AutoItTypes.String, this.serializeString(source));
             }
         }
-        return '';
     }
     serializeString(string) {
         return AutoItFunctions_1.default.stringToBinary(string);

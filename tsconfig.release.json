@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
+    "target": "ES6",
     "removeComments": true
   },
   "include": [
